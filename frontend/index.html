@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css"> 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+      <div class="mx-auto py-3 w-75">
+
+      <h1 class="text-center">Alsany3i Form</h1>
+
+      <label for="NameInput" class="m-2">Name :</label>
+      <input type="text" id="NameInput" class="m-2 form-control">
+
+      <label for="Phone_NumberInput" class=" m-2">Phone Number :</label>
+      <input type="text" id="Phone_NumberInput" class="m-2 form-control">
+
+      <label for="LocationInput" class="m-2">Location :</label>
+      <input type="text" id="LocationInput" class="m-2 form-control">
+
+      <label for="CategoryInput" class="m-2">Category :</label>
+      <textarea  type="text" id="CategoryInput" class="m-2 form-control"> </textarea> 
+
+      <button id="add" class="btn btn-sm btn-outline-primary m-2" onclick="add()">Add</button>
+      <button id="update" class="btn btn-sm btn-outline-success m-2 update " onclick="updateData()">Update</button>
+      <div>
+
+      <label for="SearchInput" class="m-2">Search :</label>
+      <input oninput="search(this.value)" type="text" placeholder="Search By Name" id="SearchInput" class="m-2 form-control">
+      </div>
+    
+      </div>  
+
+      
+        
+      
+
+
+      <div class="mx-auto w-75">
+        <table class="table">
+          <thead>
+            <th>index</th>
+            <th>Name</th>
+            <th>Phone_Number</th>
+            <th>Location</th>
+            <th>Category</th>
+            <th>update</th>
+            <th>delete</th>
+          </thead>
+
+          <tbody id="tableData">
+            
+        
+            
+          </tbody>
+
+        </table> 
+
+      </div>
+       <script src="js/main.js"></script>
+    </body>
+
+
+</html>
